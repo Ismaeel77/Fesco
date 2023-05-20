@@ -1,0 +1,93 @@
+@use'css/sass/helpers/variables' as *;
+@use'css/sass/helpers/mixins' as *;
+
+@use 'css/sass/pages/home';
+@use 'css/sass/pages/aboutus';
+* ,
+*::before,
+*::after{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Yesteryear', cursive;
+}
+h2{
+  color: $title-color;
+}
+.special{
+  background-color: $bg-color;
+  .text{
+    background-color: #fff;
+    padding: 15px;
+    span{
+      width: 100%;
+      color:$title-color;
+      font: 20px;
+    }
+  }
+}
+
+.menu{
+  background-color: $table-color;
+  h2{
+    font-size: 4rem;
+  }
+  h4{
+    color: $title-color;
+  }
+  .price{
+    color: $title-color;
+    margin-left: 15px;
+    @media (max-width:767px) {
+      display: block;
+    }
+  }
+  button{
+    color: #333;
+    background-color: #be9d7a;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+  }
+}
+
+.time-table{
+  background-color: $bg-color;
+  h2{
+    font-size: 4rem;
+  }
+  select::placeholder{
+    margin-left: 15px;
+  }
+  button{
+    color: #333;
+    background-color: #be9d7a;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+  }
+}
+
+.footer{
+  background-color: $table-color;
+  a{
+    border-top: 1px solid #be9d7a;
+    border-bottom: 1px solid #be9d7a;
+    margin: 30px 0;
+    font-size: 20px;
+  }
+  .icons-container{
+    margin-top: 70px;
+    svg{
+      margin-right: 5px;
+      border: 1px solid #be9d7a;
+      font-size: 20px;
+      padding: 10px 15px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .copyright{
+    color: $title-color;
+  }
+}

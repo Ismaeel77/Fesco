@@ -1,0 +1,83 @@
+@mixin centering(){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin section-padding(){
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@mixin reset-ul(){
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin overlay($color,$opacity){
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba($color, $opacity);
+}
+
+@mixin prefix($property , $value , $prefixes:()){
+
+  @each $prefix in $prefixes {
+    #{'-'+$prefix+'-'+$property}:$value;
+  }
+  #{$property}:$value;
+}
+
+@mixin breakpoints($point){
+  @if $point == mobile{
+    @media (max-width:576px) {
+      @content;
+    }
+  }@else if $point == small {
+    @media (min-width:768px) {
+      @content;
+    }
+  }@else if $point == medium {
+    @media (min-width:992px) {
+      @content;
+    }
+  }@else if $point == large{
+    @media (min-width:1200px) {
+      @content;
+    }
+  }
+}
+@mixin breakpointsContent($point){
+  @if $point == mobile{
+    @media (max-width:576px) {
+      @content;
+    }
+  }@else if $point == small {
+    @media (max-width:767px) {
+      @content;
+    }
+  }@else if $point == medium {
+    @media (max-width:991px) {
+      @content;
+    }
+  }@else if $point == large{
+    @media (min-width:1200px) {
+      @content;
+    }
+  }
+}
+@mixin li-before(){
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #49CB86;
+  padding-right: 10px;
+  font-size: 19px;
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  @include prefix(transform ,translateY(-50%) , webkit moz o);
+}

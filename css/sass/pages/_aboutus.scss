@@ -1,0 +1,53 @@
+@use '../helpers/variables' as *;
+@use '../helpers/mixins' as *;
+
+
+.about-us{
+  .container{
+    .content{
+      .left{
+        width: 50%;
+        h2{
+          font-size: 4rem;
+        }
+        p{
+          font-size: 20px;
+          line-height: 2.3;
+          color: #808080;
+        }
+      }
+      .right{
+        .contact{
+          width: 360px;
+          background-color: $table-color;
+          @media (min-width:992px) {
+            position: absolute;
+            right: 20px;
+            top: -220px;
+          }
+          h3{
+            color: $title-color;
+          }
+          .address{
+            a{
+              color: $title-color;
+            }
+          }
+          .reserve{
+            border: 1px solid $title-color;
+            width: fit-content;
+            margin: 0 auto;
+          }
+        }
+      }
+      @media (max-width:991px) {
+        .left,.contact{
+          margin: 0 auto 15px;
+        }
+        .left{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

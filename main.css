@@ -1,0 +1,164 @@
+.home {
+  background-color: #4c4d4f;
+}
+.home .navbar {
+  border-bottom: 1px solid #fff;
+}
+.home .navbar .navbar-brand {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.home .navbar ul {
+  margin-left: auto;
+}
+.home .navbar ul .nav-link {
+  color: #808080;
+}
+.home .navbar ul .nav-item.active > .nav-link {
+  color: #333;
+}
+.home .landing {
+  height: 600px;
+}
+.home .landing h2 {
+  font-size: 4rem;
+}
+
+.about-us .container .content .left {
+  width: 50%;
+}
+.about-us .container .content .left h2 {
+  font-size: 4rem;
+}
+.about-us .container .content .left p {
+  font-size: 20px;
+  line-height: 2.3;
+  color: #808080;
+}
+.about-us .container .content .right .contact {
+  width: 360px;
+  background-color: #141723;
+}
+@media (min-width: 992px) {
+  .about-us .container .content .right .contact {
+    position: absolute;
+    right: 20px;
+    top: -220px;
+  }
+}
+.about-us .container .content .right .contact h3 {
+  color: #bf9e7b;
+}
+.about-us .container .content .right .contact .address a {
+  color: #bf9e7b;
+}
+.about-us .container .content .right .contact .reserve {
+  border: 1px solid #bf9e7b;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .about-us .container .content .left, .about-us .container .content .contact {
+    margin: 0 auto 15px;
+  }
+  .about-us .container .content .left {
+    width: 100%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Yesteryear", cursive;
+}
+
+h2 {
+  color: #bf9e7b;
+}
+
+.special {
+  background-color: #4c4d4f;
+}
+.special .text {
+  background-color: #fff;
+  padding: 15px;
+}
+.special .text span {
+  width: 100%;
+  color: #bf9e7b;
+  font: 20px;
+}
+
+.menu {
+  background-color: #141723;
+}
+.menu h2 {
+  font-size: 4rem;
+}
+.menu h4 {
+  color: #bf9e7b;
+}
+.menu .price {
+  color: #bf9e7b;
+  margin-left: 15px;
+}
+@media (max-width: 767px) {
+  .menu .price {
+    display: block;
+  }
+}
+.menu button {
+  color: #333;
+  background-color: #be9d7a;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+}
+
+.time-table {
+  background-color: #4c4d4f;
+}
+.time-table h2 {
+  font-size: 4rem;
+}
+.time-table select::-moz-placeholder {
+  margin-left: 15px;
+}
+.time-table select::placeholder {
+  margin-left: 15px;
+}
+.time-table button {
+  color: #333;
+  background-color: #be9d7a;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+}
+
+.footer {
+  background-color: #141723;
+}
+.footer a {
+  border-top: 1px solid #be9d7a;
+  border-bottom: 1px solid #be9d7a;
+  margin: 30px 0;
+  font-size: 20px;
+}
+.footer .icons-container {
+  margin-top: 70px;
+}
+.footer .icons-container svg {
+  margin-right: 5px;
+  border: 1px solid #be9d7a;
+  font-size: 20px;
+  padding: 10px 15px;
+  width: 20px;
+  height: 20px;
+}
+.footer .copyright {
+  color: #bf9e7b;
+}/*# sourceMappingURL=main.css.map */
